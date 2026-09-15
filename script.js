@@ -14,3 +14,17 @@ if (menuButton && navLinks) {
         });
     });
 }
+
+// =========================
+// COPY EMAIL FUNCTIONALITY
+// =========================
+document.querySelectorAll('.copy-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const email = button.getAttribute('data-email');
+        navigator.clipboard.writeText(email).then(() => {
+            alert("Copied " + email + " to clipboard!");
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    });
+});
