@@ -31,18 +31,20 @@
             >
                 ☰
             </button>
-
-            <nav id="nav">
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-        </div>
+            <div class="header-right">
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="header-phone">
+    <a href="tel:+27827587466">
+      <i class="fas fa-phone"></i> +27 82 758 7466
+    </a>
+</div>
+    </div>
     </header>
 
 
@@ -60,7 +62,7 @@
         <div class="hero-content">
 
             <p class="eyebrow">
-                Welcome to 
+                Welcome to Ruva Tours
             </p>
 
             <h1>
@@ -204,6 +206,7 @@
                         <div class="card-back">
                             <h3>Safari & Wildlife</h3>
                             <p>Get up close to magnificent African wildlife on an exciting day safari adventure just outside the city.</p>
+                            <div class="price-tag">R2800</div>
                         </div>
                     </div>
                 </div>
@@ -220,6 +223,7 @@
                         <div class="card-back">
                             <h3>Cultural Heritage Tour</h3>
                             <p>Immerse yourself in Cape Town's rich history, vibrant local art, and diverse cultural landmarks.</p>
+                            <div class="price-tag">R2800</div>
                         </div>
                     </div>
                 </div>
@@ -236,11 +240,12 @@
                         <div class="card-back">
                             <h3>Sunset Ocean Cruise</h3>
                             <p>Unwind on the Atlantic waters and watch a gorgeous Cape Town sunset against the backdrop of the city.</p>
+                            <div class="price-tag">R2800</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4 (Project 7) -->
+                <!-- Project 4 -->
                 <div class="project-card">
                     <div class="card-inner">
                         <div class="card-front">
@@ -252,11 +257,12 @@
                         <div class="card-back">
                             <h3>Garden Route Excursion</h3>
                             <p>Take an extended trip through lush forests, coastal towns, and breathtaking natural wonders.</p>
+                            <div class="price-tag">R2800</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 5 (Project 8) -->
+                <!-- Project 5 -->
                 <div class="project-card">
                     <div class="card-inner">
                         <div class="card-front">
@@ -268,11 +274,12 @@
                         <div class="card-back">
                             <h3>Chauffeur City Tour</h3>
                             <p>Travel in supreme comfort with a private driver showcasing the city's finest architectural highlights.</p>
+                            <div class="price-tag">R2800</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 6 (Project 9) -->
+                <!-- Project 6 -->
                 <div class="project-card">
                     <div class="card-inner">
                         <div class="card-front">
@@ -284,11 +291,12 @@
                         <div class="card-back">
                             <h3>VIP Airport Transfer</h3>
                             <p>Enjoy prompt, secure, and luxurious transfers to and from Cape Town International Airport.</p>
+                            <div class="price-tag">R2800</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 7 (Formerly Project 1 - Cars at Bottom) -->
+                <!-- Project 7 (Cars at Bottom) -->
                 <div class="project-card">
                     <div class="card-inner">
                         <div class="card-front">
@@ -300,11 +308,12 @@
                         <div class="card-back">
                             <h3>Cape Town Winelands</h3>
                             <p>Explore the stunning vineyards, historic estates, and world-class wine tasting experiences in the Western Cape.</p>
+                            <div class="price-tag">R2800</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 8 (Formerly Project 2 - Cars at Bottom) -->
+                <!-- Project 8 (Cars at Bottom) -->
                 <div class="project-card">
                     <div class="card-inner">
                         <div class="card-front">
@@ -316,11 +325,12 @@
                         <div class="card-back">
                             <h3>Table Mountain Adventure</h3>
                             <p>Experience breathtaking panoramic views of Cape Town with our guided sightseeing excursions.</p>
+                            <div class="price-tag">R2800</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 9 (Formerly Project 3 - Cars at Bottom) -->
+                <!-- Project 9 (Cars at Bottom) -->
                 <div class="project-card">
                     <div class="card-inner">
                         <div class="card-front">
@@ -332,6 +342,7 @@
                         <div class="card-back">
                             <h3>Coastal Peninsula Drive</h3>
                             <p>Discover picturesque seaside villages, dramatic ocean cliffs, and unforgettable scenic coastal routes.</p>
+                            <div class="price-tag">R2800</div>
                         </div>
                     </div>
                 </div>
@@ -341,6 +352,32 @@
         </div>
 
     </section>
+    <div class="ruva-review-container">
+  <h2>Guest Reviews</h2>
+
+  <!-- Write Review Box -->
+  <div class="review-box">
+    <h3>Write a Review</h3>
+    <input type="text" id="reviewerName" placeholder="Your Name (e.g., Sarah)" required />
+    <select id="reviewerRating">
+      <option value="5">★★★★★ (5/5)</option>
+      <option value="4">★★★★☆ (4/5)</option>
+      <option value="3">★★★☆☆ (3/5)</option>
+      <option value="2">★★☆☆☆ (2/5)</option>
+      <option value="1">★☆☆☆☆ (1/5)</option>
+    </select>
+    <textarea id="reviewText" rows="4" placeholder="Share your experience with Ruva Tours..." required></textarea>
+    
+  <button type="button" id="submitReviewBtn">Submit Review</button>
+
+  <!-- Display All Reviews List -->
+  <div class="reviews-display">
+    <h3>Recent Reviews</h3>
+    <div id="reviewsList">
+      <!-- Reviews will automatically appear here as people write them -->
+    </div>
+  </div>
+</div>
     
     <!-- CONTACT -->
     <section class="section contact" id="contact">
